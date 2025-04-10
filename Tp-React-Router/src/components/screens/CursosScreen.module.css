@@ -1,0 +1,23 @@
+.containerTitulo {
+  background-color: #151515;
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.containerBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  height: 89vh;
+  width: 100%;
+  color: white;
+}

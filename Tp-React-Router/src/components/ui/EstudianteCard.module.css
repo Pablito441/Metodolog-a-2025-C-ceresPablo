@@ -1,0 +1,28 @@
+.card {
+  background-color: #282828;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.card:hover {
+  background-color: #323232;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d99cdf;
+  margin: 0;
+}
+
+.descripcion {
+  font-size: 1rem;
+  color: #cccccc;
+  margin: 0;
+}
