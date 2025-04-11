@@ -14,3 +14,13 @@ export const getAllCursos = async (): Promise<ICurso[]> => {
     throw error;
   }
 };
+//Funcion para obtener el curso por el id y poder utilizar /estudiantes?curso={id}
+export const getCursoById = async (id: number): Promise<ICurso> => {
+  try {
+    const response = await axios.get<ICurso>(`${API_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching curso by ID:", error);
+    throw error;
+  }
+};
