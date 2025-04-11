@@ -6,12 +6,18 @@
 
 ## ▶️ Instalación y uso
 
-1. Instalá las dependencias:
-   ```bash
-   npm install
 
-   ```bash
-   npm run dev
+1. Instalar dependencias
+```bash
+npm install
+```
 
-   ```bash
-   npm run dbDev
+2. Iniciar JSON Server
+```bash
+npm run dbDev
+```
+
+3. Iniciar aplicación
+```bash
+npm run dev
+```
