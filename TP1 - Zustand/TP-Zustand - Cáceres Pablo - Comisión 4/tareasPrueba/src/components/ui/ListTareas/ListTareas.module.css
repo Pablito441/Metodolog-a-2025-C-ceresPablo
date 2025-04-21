@@ -29,25 +29,12 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.containerList:hover {
-  background-color: #dcdcdc;
-}
-
-.containerList > div {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
 .containerList > div:hover {
-  transform: scale(1.02);
+  transform: scale(1.009);
 }
 
 .addButton {
-  background-color: #4b0082;
+  background-color: #8a2be2;
   color: white;
   border: none;
   border-radius: 5px;

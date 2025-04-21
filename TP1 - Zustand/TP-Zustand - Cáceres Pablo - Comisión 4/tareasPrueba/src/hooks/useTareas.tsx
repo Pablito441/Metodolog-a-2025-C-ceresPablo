@@ -6,10 +6,8 @@ import {
   getAllTareas,
   postNuevaTarea,
 } from "../http/tareas";
-import { useCallback } from "react";
 import { ITarea } from "../types/ITarea";
 import Swal from "sweetalert2";
-
 export const useTareas = () => {
   const {
     tareas,
@@ -27,16 +25,12 @@ export const useTareas = () => {
     }))
   );
 
-  const getTareas = useCallback(async () => {
-    try {
-      const data = await getAllTareas();
-      if (data) {
-        setArrayTareas(data);
-      }
-    } catch (error) {
-      console.error("Error al obtener tareas:", error);
+  const getTareas = async () => {
+    const response = await getAllTareas();
+    if (response) {
+      setArrayTareas(response);
     }
-  }, [setArrayTareas]);
+  };
 
   const crearTarea = async (nuevaTarea: ITarea) => {
     agregarNuevaTarea(nuevaTarea);

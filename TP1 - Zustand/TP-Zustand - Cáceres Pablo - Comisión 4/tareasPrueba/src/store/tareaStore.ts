@@ -15,8 +15,6 @@ export const tareaStore = create<ITareaStore>((set) => ({
   tareas: [],
   tareaActiva: null,
 
-  //funciones modificadoras para el array
-
   //agregar array de tareas
   setArrayTareas: (arrayDeTareas) => set(() => ({ tareas: arrayDeTareas })),
 

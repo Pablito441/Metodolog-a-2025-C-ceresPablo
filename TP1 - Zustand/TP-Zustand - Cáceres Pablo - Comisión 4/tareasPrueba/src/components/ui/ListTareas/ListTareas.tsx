@@ -12,7 +12,7 @@ export const ListTareas = () => {
   const { getTareas, tareas } = useTareas();
   useEffect(() => {
     getTareas();
-  }, [getTareas]);
+  }, []);
 
   const [openModalTarea, setOpenModalTarea] = useState(false);
   const handleOpenModalEdit = (tarea: ITarea) => {

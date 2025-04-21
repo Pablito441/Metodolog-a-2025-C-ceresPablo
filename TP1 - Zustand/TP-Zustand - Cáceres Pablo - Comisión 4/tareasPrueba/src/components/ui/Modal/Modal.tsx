@@ -38,7 +38,7 @@ export const Modal: FC<IModal> = ({ handleCloseModal }) => {
     if (tareaActiva) {
       putTareaEditar(formValues);
     } else {
-      crearTarea({ ...formValues, id: new Date().toDateString() });
+      crearTarea({ ...formValues, id: crypto.randomUUID() });
     }
     setTareaActiva(null);
     handleCloseModal();
